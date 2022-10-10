@@ -9,8 +9,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common CherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_ENABLE_BLUR := true
+
+# Vanilla build stuff.
+CHERISH_VANILLA := true
+
+# Additional stuff
+SELINUX_IGNORE_NEVERALLOWS =: true
+ALLOW_MISSING_DEPENDENCIES =: true
+RELAX_USES_LIBRARY_CHECK =: true
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES =: true
+
+# Maintainer stuff.
+CHERISH_BUILD_TYPE := OFFICIAL
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=RaidenIshigami
 
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
@@ -22,7 +42,7 @@ PRODUCT_PACKAGES += \
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439
-PRODUCT_NAME := lineage_Mi439
+PRODUCT_NAME := cherish_Mi439
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SDM439
