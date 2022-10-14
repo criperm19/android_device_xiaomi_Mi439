@@ -18,8 +18,8 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_ENABLE_BLUR := true
 
-# Vanilla build stuff.
-CHERISH_VANILLA := true
+# GApps build stuff
+WITH_GMS := true
 
 # Additional stuff
 SELINUX_IGNORE_NEVERALLOWS := true
