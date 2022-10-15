@@ -15,6 +15,12 @@ BLAZE_MAINTAINER := RaidenIshigami
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 720
 
+# Additional stuff
+SELINUX_IGNORE_NEVERALLOWS := true
+ALLOW_MISSING_DEPENDENCIES := true
+RELAX_USES_LIBRARY_CHECK := true
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
 
