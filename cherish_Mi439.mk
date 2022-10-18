@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common CherishOS stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_BUILD_GRAPHENEOS_CAMERA := false
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 720
