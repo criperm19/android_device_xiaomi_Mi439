@@ -49,6 +49,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := mi439-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm439
 TARGET_KERNEL_LLVM_BINUTILS := false
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := device/qualcomm/kernel-sdm439_64/Image.gz-dtb
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
