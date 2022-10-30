@@ -9,8 +9,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common LineageOS stuff.
+# Inherit some common RiceDroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# RiceDroid Stuff
+RICE_MAINTAINER := RaidenIshigami
+TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GMS := false
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
+TARGET_ENABLE_BLUR := true
+SUSHI_BOOTANIMATION := 720
+TARGET_USE_PIXEL_FINGERPRINT := true
+RICE_PACKAGE_TYPE := Vanilla
 
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
