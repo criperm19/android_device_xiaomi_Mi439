@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbom_Mi439.mk
+    $(LOCAL_DIR)/carbon_Mi439.mk
 
 COMMON_LUNCH_CHOICES := \
     carbon_Mi439-user \
