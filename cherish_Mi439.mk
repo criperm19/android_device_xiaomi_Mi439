@@ -20,6 +20,7 @@ TARGET_ENABLE_BLUR := true
 
 # GApps build stuff
 WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
 
 # Additional stuff
 SELINUX_IGNORE_NEVERALLOWS := true
