@@ -21,6 +21,9 @@ ALLOW_MISSING_DEPENDENCIES := true
 RELAX_USES_LIBRARY_CHECK := true
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 # Overlays
 PRODUCT_PACKAGES += \
     xiaomi_pine_overlay_lineage \
