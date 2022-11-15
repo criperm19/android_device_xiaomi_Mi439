@@ -18,8 +18,6 @@ $(call inherit-product, device/xiaomi/Mi439/device.mk)
 # Additional stuff
 SELINUX_IGNORE_NEVERALLOWS := true
 ALLOW_MISSING_DEPENDENCIES := true
-RELAX_USES_LIBRARY_CHECK := true
-PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 # Blur
 TARGET_ENABLE_BLUR := true
