@@ -27,8 +27,8 @@ $(call inherit-product, device/xiaomi/Mi439/device.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \
-    xiaomi_pine_overlay_lineage \
-    xiaomi_olive_overlay_lineage
+										xiaomi_pine_overlay_lineage \
+										xiaomi_olive_overlay_lineage
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439
@@ -42,7 +42,7 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="olive-user 10 QKQ1.191014.001 V12.5.1.0.QCNMIXM release-keys"
+																PRIVATE_BUILD_DESC="olive-user 10 QKQ1.191014.001 V12.5.1.0.QCNMIXM release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "Xiaomi/olive/olive:10/QKQ1.191014.001/V12.5.1.0.QCNMIXM:user/release-keys"
+BUILD_FINGERPRINT := "google/cheetah/cheetah:13/TQ1A.221205.011/9244662:user/release-keys"
