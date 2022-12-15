@@ -29,6 +29,10 @@ on post-fs-data
     chown system cameraserver /mnt/vendor/persist/camera
     chmod 0755 /mnt/vendor/persist/camera
 
+# Smart charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+
 #add golden bin
 on property:sys.boot_completed=1
     mkdir /data/vendor/camera/westalgo 0777 cameraserver audio
